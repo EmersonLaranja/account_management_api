@@ -8,7 +8,10 @@ export default (router: Router): void => {
         "/accounts",
         expressRouteAdapter(addAccountControllerFactory())
     );
-
+    router.get(
+        "/accounts/:accountNumber/balance",
+        expressRouteAdapter(getAccountBalanceControllerFactory())
+    );
 
 
 
