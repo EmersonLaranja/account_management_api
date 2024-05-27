@@ -1,5 +1,5 @@
 import { Validation } from "../interfaces/validation";
-import { InvalidParamError } from "../utils/errors";
+import { InvalidParamError } from "../utils/errors/invalid-param-error";
 
 export class NumberValidation implements Validation {
     constructor(
