@@ -82,13 +82,13 @@
     "forceConsistentCasingInFileNames": true /* Certifique-se de que a capitalização esteja correta nas importações. */,
 
     /* Verificação de Tipo */
-    "strict": true /* Habilitar todas as opções estritas de verificação de tipo. */,
-    // "noImplicitAny": true,                            /* Habilitar o relatório de erros para expressões e declarações com um tipo 'any' implícito. */
-    // "strictNullChecks": true,                         /* Quando a fizer a verificação de tipo, considere 'null' e 'undefined'. */
-    // "strictFunctionTypes": true,                      /* Ao atribuir funções, certifique-se que os parâmetros e os valores de retorno sejam compatíveis com subtipo. */
+    // "strict": true /* Habilitar todas as opções estritas de verificação de tipo. */,
+    "noImplicitAny": true /* Habilitar o relatório de erros para expressões e declarações com um tipo 'any' implícito. */,
+    "strictNullChecks": true /* Quando a fizer a verificação de tipo, considere 'null' e 'undefined'. */,
+    "strictFunctionTypes": true /* Ao atribuir funções, certifique-se que os parâmetros e os valores de retorno sejam compatíveis com subtipo. */,
     // "strictBindCallApply": true,                      /* Verificar se os argumentos para os métodos 'associar', 'chamar' e 'aplicar' correspondem à função original. */
     // "strictPropertyInitialization": true,             /* Verifique as propriedades de classe declaradas, mas não definidas no construtor. */
-    // "noImplicitThis": true,                           /* Habilitar relatório de erros quando 'this' for fornecido o tipo 'any'. */
+    "noImplicitThis": true /* Habilitar relatório de erros quando 'this' for fornecido o tipo 'any'. */,
     // "useUnknownInCatchVariables": true,               /* Padronize as variáveis da cláusula catch como 'desconhecido' em vez de 'qualquer'. */
     // "alwaysStrict": true,                             /* Certifique-se de que 'use strict' seja sempre emitido. */
     // "noUnusedLocals": true,                           /* Habilitar relatório de erros quando as variáveis locais não forem lidas. */
