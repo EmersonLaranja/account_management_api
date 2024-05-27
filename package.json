@@ -4,14 +4,21 @@
   "description": "API for managing an account",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "tsx src/server.ts",
+    "build": "tsc",
+    "dev": "tsx watch src/server.ts"
   },
   "author": "Emerson Laranja",
   "engines": {
     "node": "20.8.0"
   },
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
+    "@types/express": "^4.17.21",
+    "tsx": "^4.11.0",
     "typescript": "^5.4.5"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
   }
 }
