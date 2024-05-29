@@ -1,4 +1,5 @@
-import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Entity, PrimaryGeneratedColumn, Column, ManyToOne } from 'typeorm';
+import { Account } from './account';
 
 @Entity()
 export class Transfer {
@@ -11,6 +12,6 @@ export class Transfer {
     @Column()
     to: string;
 
-    @Column()
+    @Column({ type: "float" })
     amount: number;
 }
