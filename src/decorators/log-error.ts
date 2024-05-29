@@ -1,6 +1,6 @@
 import { Controller } from "../interfaces/controller";
 import { HttpRequest, HttpResponse } from "../interfaces/http";
-import { ILogErrorRepository } from "../repositories/interface-log-error-repository";
+import { ILogErrorRepository } from "../repositories/interfaces/interface-log-error-repository";
 
 export class LogErrorControllerDecorator implements Controller {
     constructor(
