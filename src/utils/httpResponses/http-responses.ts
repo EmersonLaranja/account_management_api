@@ -1,5 +1,4 @@
 import { HttpResponse } from "../../interfaces/http";
-import { ConflictError } from "../errors/conflict-error";
 import { ServerError } from "../errors/server-error";
 
 export const badRequest = (error: Error): HttpResponse => ({
@@ -14,7 +13,11 @@ export const notFound = (message: string): HttpResponse => ({
 
 export const conflict = (message: string): HttpResponse => ({
   statusCode: 409,
-  // body: new ConflictError(message),
+  // body: new ConflictError(message) 
+});
+export const insufficient = (message: string): HttpResponse => ({
+  statusCode: 409,
+  // body: new InsufficientError(message),
 });
 
 export const serverError = (error: Error): HttpResponse => ({
