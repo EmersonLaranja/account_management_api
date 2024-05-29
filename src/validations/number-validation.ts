@@ -9,9 +9,8 @@ export class NumberValidation implements Validation {
     validate(input: any): Error | void {
 
         const value = input[this.fieldName];
-        const isNumberRegex = /^[0-9]+$/;
-        console.log(NaN + value)
-        if (typeof value !== 'string' || !isNumberRegex.test(value)) {
+        const isNumberRegex = /^\d+([.,]\d+)?$/;
+        if (!isNumberRegex.test(value)) {
             return new InvalidParamError(this.fieldName);
         }
     }
