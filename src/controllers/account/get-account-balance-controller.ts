@@ -1,7 +1,7 @@
 import { Controller } from "../../interfaces/controller";
 import { HttpRequest, HttpResponse } from "../../interfaces/http";
 import { Validation } from "../../interfaces/validation";
-import { IAccountRepository } from "../../repositories/interface-account-repository";
+import { IAccountRepository } from "../../repositories/interfaces/interface-account-repository";
 import { badRequest, notFound, ok, serverError } from "../../utils/httpResponses/http-responses";
 
 export class GetAccountBalanceController implements Controller {
@@ -26,7 +26,7 @@ export class GetAccountBalanceController implements Controller {
             }
 
             const { balance } = accountExists
-            return ok(balance);
+            return ok({ balance });
 
         } catch (error) {
             return serverError(error);
