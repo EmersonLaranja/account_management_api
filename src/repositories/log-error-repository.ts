@@ -1,6 +1,6 @@
 import { AppDataSource } from "../database/data-source";
 import { LogError } from "../models/log-error";
-import { ILogErrorRepository } from "./interface-log-error-repository";
+import { ILogErrorRepository } from "./interfaces/interface-log-error-repository";
 
 export default class LogErrorRepository implements ILogErrorRepository {
     async logError(stack: string): Promise<void> {
