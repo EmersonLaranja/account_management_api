@@ -70,6 +70,7 @@ Na arquitetura acima foram usados alguns padrões de projeto pensando na escalab
 
 Essa é a árvore de estrutura das pastas, abaixo há mais detalhes do que cada pasta é:
 
+```
 project-root/
 ├── .github/
 ├── src/
@@ -93,7 +94,7 @@ project-root/
 │ │ ├──
 │ │ ├──
 │ ├── interfaces/
-│ │ ├── repositores/
+│ │ ├── repositories/
 │ │ ├──
 │ ├── models/
 │ │ ├──
@@ -101,7 +102,7 @@ project-root/
 │ │ ├──
 │ ├── routes/
 │ │ ├──
-│ ├── tests/
+│ ├── _tests/
 │ │ ├── controllers/
 │ │ ├── mocks/
 │ │ ├──
@@ -119,8 +120,9 @@ project-root/
 ├── package-lock.json
 ├── package.json
 ├── README.md
-├── README[PT-BR].md
+├── README[EN].md
 └── tsconfig.json
+```
 
 ### project-root/
 
@@ -174,11 +176,11 @@ Contém os repositórios que são responsáveis por interagir com o banco de dad
 
 Contém a definição das rotas da aplicação, mapeando endpoints para controllers específicos.
 
-##### tests/
+##### \_tests/
 
 Contém os testes unitários e de integração para verificar o comportamento correto da aplicação.
 
-###### tests/mocks
+###### \_tests/mocks
 
 Simulações de dependências externas, permitindo testes isolados e controlados das funcionalidades da aplicação.
 

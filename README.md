@@ -70,6 +70,7 @@ In the above architecture, several design patterns were used with scalability an
 
 This is the folder structure tree. Below, there are more details on what each folder is:
 
+```
 project-root/
 ├── .github/
 ├── src/
@@ -101,7 +102,7 @@ project-root/
 │ │ ├──
 │ ├── routes/
 │ │ ├──
-│ ├── tests/
+│ ├── _tests/
 │ │ ├── controllers/
 │ │ ├── mocks/
 │ │ ├──
@@ -121,6 +122,7 @@ project-root/
 ├── README.md
 ├── README[EN].md
 └── tsconfig.json
+```
 
 ### project-root/
 
@@ -174,11 +176,11 @@ Contains repositories responsible for interacting with the database, performing 
 
 Contains the application's route definitions, mapping endpoints to specific controllers.
 
-##### tests/
+##### \_tests/
 
 Contains unit and integration tests to verify the application's correct behavior.
 
-###### tests/mocks
+###### \_tests/mocks
 
 Simulations of external dependencies, allowing isolated and controlled testing of the application's functionalities.
 
