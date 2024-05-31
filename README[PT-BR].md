@@ -1,5 +1,3 @@
-"""
-
 # API de Gerenciamento de Contas
 
 ## Visão Geral
@@ -106,7 +104,3 @@ Os detalhes de como chamar cada funcionalidade, os parâmetros necessários e ma
 ## Licença
 
 Este projeto é licenciado sob a Licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
-
-```
-
-```
