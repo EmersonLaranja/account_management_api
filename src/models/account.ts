@@ -11,6 +11,6 @@ export class Account {
     balance!: number;
 
     @OneToMany(() => Deposit, deposit => deposit.account)
-    deposits: Deposit[];
+    deposits?: Deposit[];
 
 }

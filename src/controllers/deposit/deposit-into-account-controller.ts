@@ -2,11 +2,13 @@ import { Controller } from "../../interfaces/controller";
 import { HttpRequest, HttpResponse } from "../../interfaces/http";
 import { Validation } from "../../interfaces/validation";
 import { IAccountRepository } from "../../repositories/interfaces/interface-account-repository";
+import { IDepositRepository } from "../../repositories/interfaces/interface-deposit-repository";
 import { badRequest, notFound, ok, serverError } from "../../utils/httpResponses/http-responses";
 
 export class DepositIntoAccountController implements Controller {
     constructor(
         private readonly accountRepository: IAccountRepository,
+        private readonly depositRepository: IDepositRepository,
         private readonly validation: Validation
     ) { }
     async handle(httpRequest: HttpRequest): Promise<HttpResponse> {
@@ -19,7 +21,6 @@ export class DepositIntoAccountController implements Controller {
             const error = this.validation.validate(combinedRequest);
 
             if (error) {
-                console.log(error)
                 return badRequest(error);
             }
 
@@ -32,10 +33,10 @@ export class DepositIntoAccountController implements Controller {
             }
 
 
-            const deposit = await this.accountRepository.depositIntoAccount(account_number, amount);
+            const deposit = await this.depositRepository.depositIntoAccount(account_number, amount);
+            //a documentação atual pede para não retornar as informações do deposito, mas apenas um status 200
 
-
-            return ok(deposit);
+            return ok();
         } catch (error) {
             return serverError(error);
         }
